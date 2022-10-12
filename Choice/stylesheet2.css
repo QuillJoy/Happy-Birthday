@@ -1,0 +1,179 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Hylia Serif" ;
+    src: url(HyliaSerif.otf);
+}
+
+@font-face {
+    font-family: "Saiyan-Sans" ;
+    src: url(Saiyan-Sans.ttf);
+}
+
+
+.flex-container{
+/*     animation: transitionIn1 1.0s; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes transitionIn1{
+    from {
+        opacity: 0;
+/*         transform: rotateY(-90deg); */
+        transform: translateX(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+@keyframes transitionIn2{
+    0% {
+        opacity: 0;
+/*         transform: rotateY(-90deg); */
+        transform: translateX(50%);
+    }
+    
+
+    50%{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+
+
+
+
+
+@keyframes transitionIn3 {
+    0% {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    90% {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+
+}
+
+
+
+.chi,.ate{
+    height: 100%;
+}
+
+.chi {
+    animation: transitionIn1 1.0s;
+    flex:1;
+    text-align: center;
+    font-family: "Hylia Serif";
+    font-size: 40px;
+    background-image: url("ex2.jpg");
+    background-size:cover;
+    color:lightgoldenrodyellow;
+}
+
+.chiHead{
+    animation: transitionIn3 4.0s;
+    background-color: transparent;
+    position: absolute;
+    left: 35%;
+    top: 9.3%;
+    font-size: 90px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.chiText{
+    animation: transitionIn3 6.0s;
+    background-color: transparent;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    font-size: 80px;
+    color:gold;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+
+}
+
+
+.ate{
+    animation: transitionIn2 2.0s;
+    flex:1;
+    background-image: url("ex1.webp");
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color:lightgoldenrodyellow;
+    font-family:"Saiyan-Sans";
+}
+
+.ateHead{
+    animation: transitionIn3 5.0s;
+    background-color: transparent;
+    position: absolute;
+    right: 33%;
+    top: 10%;
+    font-size: 100px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.ateText{
+    animation: transitionIn3 7.0s;
+    background-color: transparent;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    font-size: 100px;
+    color:orange;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+
+
+
+.chiCred{
+    animation: transitionIn3 10.0s;
+    position:absolute;
+    bottom: 10%;
+    left: 35%;
+    font-size: 50px;
+    color: orange;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.ateCred{
+    animation: transitionIn3 11.0s;
+    position:absolute;
+    bottom: 10%;
+    right: 45%;
+    font-size: 55px;
+    color: purple;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
