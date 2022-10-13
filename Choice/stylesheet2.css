@@ -15,7 +15,7 @@ html, body{
 
 
 .flex-container{
-/*     animation: transitionIn1 1.0s; */
+    animation: transitionIn1 1.0s;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -110,9 +110,9 @@ html, body{
     background-color: transparent;
     position: absolute;
     left: 35%;
-    top: 25%;
+    top: 50%;
     font-size: 80px;
-    color:gold;
+    color:goldenrod;
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: white;
 
@@ -173,7 +173,23 @@ html, body{
     bottom: 10%;
     right: 45%;
     font-size: 55px;
-    color: purple;
+    color: orange;
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: black;
+}
+
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Hylia Serif";
+}
+
+.btn:hover{
+    background-color: white;
 }
