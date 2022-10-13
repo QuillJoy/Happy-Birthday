@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset ="UTF-8">
+        <title> For Jierra </title>
+       <!--  <link rel="stylesheet" href="stylesheet.css"> -->
+       <style>
+
+        @font-face {
+            font-family: "Hylia Serif";
+            src: url("HyliaSerif.otf");
+        }
+
+        @keyframes htmlTransition{
+            from {
+                opacity: 0;
+                transform: rotateY(-10deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotateY(0);
+            }
+        }
+
+        @keyframes linkTransition{
+            0% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+
+            60% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translateX(0)
+            }
+        }
+
+        @keyframes zeldaTransition{
+            0% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+        html{
+            animation: htmlTransition 2.00s;
+            background-image: url("chiBack2.jpg");
+            background-size: cover;
+        }
+
+        .Link{
+            animation: linkTransition 3.0s;
+            position: absolute;
+            left: 6%;
+        }
+
+        .Zelda{
+            animation: zeldaTransition 5.0s;
+            position: absolute;
+            right: 6%;
+
+        }
+
+        .text{
+            animation: zeldaTransition 6.5s;
+            font-family: "Hylia Serif";
+            position: absolute;
+            left: 25%;
+            top:12%;
+            text-align: center;
+            color:gold;
+            font-size: 4em;
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: black;
+        }
+       </style>
+    </head>
+    <body>
+        <img class = "Link" src="Link.png" style ="width:700px;height:auto">
+        <img class = "Zelda" src="Zelda.png" style ="width:700px;height:auto">
+        <div class = "text">
+            <h1>
+                Happy Birthday
+            </h1>
+            <h1 style = "color: lightgoldenrodyellow; -webkit-text-stroke-color: black; animation: zeldaTransition 7.5s;">
+                Jierra!!!
+            </h1>
+        </div>
+        <form action="chiRead.html" style="display: inline;  margin: 2em; position: absolute; left: 45%; top:65%; animation: zeldaTransition 9.0s;">
+            <input type="submit" value="Click me" />
+        </form>
+       
+    </body>
+</html>
